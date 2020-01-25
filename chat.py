@@ -52,7 +52,7 @@ def smart_agriculture():
                         nn.save("name.mp3")
                         playsound("name.mp3")
                         fn=str(stt())
-                        fnn=gTTS(text=fn,lang='en',slow=False)
+                        fnn=gTTS(text="hello"+fn,lang='en',slow=False)
                         fnn.save("fnn.mp3")
                         playsound("fnn.mp3")
                         add="where do you stay"
