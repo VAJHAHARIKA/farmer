@@ -48,18 +48,28 @@ def smart_agriculture():
                         l=sr.Recognizer()
                         with sr.Microphone() as source:
                             audio=l.listen(source, timeout=4,phrase_time_limit=3)
-                        name="Hello "+l.recognize_google(audio)+" what is your name"
-                        nn=gTTS(text=name,lang='en',slow=False)
-                        nn.save("fname.mp3")
-                        playsound("fname.mp3")
-                        add="where do you stay"+str(stt())
-                        ad=gTTS(text=xyz,lang='en',slow=False)
-                        ad.save("ads.mp3")
-                        playsound("ads.mp3")
-                        crop="Hello "+l.recognize_google(audio)+" where do you stay"
-                        aa=gTTS(text=name,lang='en',slow=False)
-                        aa.save("faa.mp3")
-                        playsound("faa.mp3")
+                        name="Hello ,what is your name"
+                        nn.save("name.mp3")
+                        playsound("name.mp3")
+                        fn=str(stt())
+                        fnn=gTTS(text=fn,lang='en',slow=False)
+                        fnn.save("fnn.mp3")
+                        playsound("fnn.mp3")
+                        add="where do you stay"
+                        ad.save("add.mp3")
+                        playsound("add.mp3")
+                        ad1=str(stt())
+                        add1=gTTS(text=ad1,lang='en',slow=False)
+                        add1.save("add1.mp3")
+                        playsound("add1.mp3")
+                        crop="what crops do you grow"
+                        cr.save("crop.mp3")
+                        playsound("crop.mp3")
+                        cro=str(stt())
+                        cr1=gTTS(text=cro,lang='en',slow=False)
+                        cr1.save("cr1.mp3")
+                        playsound("cr1.mp3")
+                        
 
 
         except:
