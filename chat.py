@@ -52,10 +52,10 @@ def smart_agriculture():
                         nn=gTTS(text=name,lang='en',slow=False)
                         nn.save("fname.mp3")
                         playsound("fname.mp3")
-                        address="Hello "+l.recognize_google(audio)+" what is your name"
-                        nn=gTTS(text=name,lang='en',slow=False)
-                        nn.save("fname.mp3")
-                        playsound("fname.mp3")
+                        address="Hello "+l.recognize_google(audio)+" where do you stay"
+                        aa=gTTS(text=name,lang='en',slow=False)
+                        aa.save("faa.mp3")
+                        playsound("faa.mp3")
 
 
         except:
